@@ -1,3 +1,3 @@
 export default function Page() {
-  return <h1>안헬로우~</h1>
+  return <h1>안헬로우!!!~</h1>
 }
