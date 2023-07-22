@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Main() {
-    const [open, setOpen] = useState(false);
-    {/* nav */}
     return (
         <section className="bg-gray-100 py-8">
             <div className="container mx-auto font-notosanskr">
