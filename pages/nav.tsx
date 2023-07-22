@@ -4,11 +4,13 @@ export default function Nav() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-gradient-to-r from-indigo-600 to-purple-600 p-4">
+        <nav className="bg-gradient-to-r from-amber-300 to-amber-900 p-4">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="text-white font-bold text-2xl md:text-3xl font-heading">
+                <div className="text-white font-bold text-2xl md:text-3xl font-heading font-mono">
                     BamPie
                 </div>
+
+                {/* Mobile menu button */}
                 <button
                     className="md:hidden text-white"
                     onClick={() => setOpen(!open)}
@@ -28,7 +30,9 @@ export default function Nav() {
                         ></path>
                     </svg>
                 </button>
-                <div className="hidden md:flex space-x-4 text-base md:text-xl font-body">
+
+                {/* Desktop menu */}
+                <div className="hidden md:flex space-x-4 text-base md:text-l font-mono font-body ">
                     <a
                         href="#"
                         className={`text-white ${
@@ -44,14 +48,6 @@ export default function Nav() {
                         }`}
                     >
                         About
-                    </a>
-                    <a
-                        href="#"
-                        className={`text-white ${
-                            open ? "hover:text-gray-300" : "hover:text-white"
-                        }`}
-                    >
-                        Services
                     </a>
                     <a
                         href="#"
@@ -63,29 +59,25 @@ export default function Nav() {
                     </a>
                 </div>
             </div>
+
+            {/* Mobile menu */}
             {open && (
                 <div className="md:hidden py-2 px-4">
                     <a
                         href="#"
-                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-body"
+                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-mono font-body"
                     >
                         Home
                     </a>
                     <a
                         href="#"
-                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-body"
+                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-mono font-body"
                     >
                         About
                     </a>
                     <a
                         href="#"
-                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-body"
-                    >
-                        Services
-                    </a>
-                    <a
-                        href="#"
-                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-body"
+                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-mono font-body"
                     >
                         Contact
                     </a>
