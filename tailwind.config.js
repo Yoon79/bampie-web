@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        bam: '#78301d',
+        pie: '#e9b691',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -14,4 +18,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

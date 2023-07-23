@@ -3,12 +3,12 @@ import React from "react";
 
 export default function Main() {
     return (
-        <section className="bg-gray-100 py-8">
+        <section className="bg-bam py-8">
             <div className="container mx-auto font-notosanskr">
-                <h1 className="text-4xl font-bold text-center font-mono mb-8">
+                <h1 className="text-white text-4xl font-bold text-center font-mono mb-8">
                 Release
                 </h1>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 font-mono">
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8 font-mono">
                     {/* Album Item 1 */}
                     <div
                         className="bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 cursor-pointer"

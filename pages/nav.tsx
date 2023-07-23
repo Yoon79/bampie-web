@@ -4,9 +4,10 @@ export default function Nav() {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="bg-gradient-to-r from-amber-300 to-amber-900 p-4">
+        // <nav className="bg-gradient-to-r from-amber-300 to-amber-900 p-4">
+        <nav className="bg-gradient-to-r bg-bam p-4">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="text-white font-bold text-2xl md:text-3xl font-heading font-mono">
+                <div className="text-pie text-shadow font-bold text-2xl md:text-3xl font-heading font-mono">
                     BamPie
                 </div>
 
@@ -16,7 +17,7 @@ export default function Nav() {
                     onClick={() => setOpen(!open)}
                 >
                     <svg
-                        className="h-6 w-6"
+                        className="h-6 w-6 text-pie"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
