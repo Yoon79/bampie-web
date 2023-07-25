@@ -9,6 +9,8 @@ module.exports = {
       colors: {
         bam: '#78301d',
         pie: '#e9b691',
+        bean: '#754C2F',
+        brown: '#533A23',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

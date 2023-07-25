@@ -5,7 +5,7 @@ export default function Nav() {
 
     return (
         // <nav className="bg-gradient-to-r from-amber-300 to-amber-900 p-4">
-        <nav className="bg-gradient-to-r bg-bam p-4">
+        <nav className="bg-gradient-to-r bg-bam p-4 border-b-2 border-pie">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-pie text-shadow font-bold text-2xl md:text-3xl font-heading font-mono">
                     BamPie
@@ -33,27 +33,27 @@ export default function Nav() {
                 </button>
 
                 {/* Desktop menu */}
-                <div className="hidden md:flex space-x-4 text-base md:text-l font-mono font-body ">
+                <div className="hidden md:flex space-x-4 text-base md:text-l font-bold font-body ">
                     <a
                         href="#"
-                        className={`text-white ${
-                            open ? "hover:text-gray-300" : "hover:text-white"
+                        className={`text-pie ${
+                            open ? "hover:text-bean" : "hover:text-pie"
                         }`}
                     >
-                        Home
+                        New
                     </a>
                     <a
                         href="#"
-                        className={`text-white ${
-                            open ? "hover:text-gray-300" : "hover:text-white"
+                        className={`text-pie ${
+                            open ? "hover:text-bean" : "hover:text-pie"
                         }`}
                     >
-                        About
+                        Music
                     </a>
                     <a
                         href="#"
-                        className={`text-white ${
-                            open ? "hover:text-gray-300" : "hover:text-white"
+                        className={`text-pie ${
+                            open ? "hover:text-bean" : "hover:text-pie"
                         }`}
                     >
                         Contact
@@ -63,22 +63,22 @@ export default function Nav() {
 
             {/* Mobile menu */}
             {open && (
-                <div className="md:hidden py-2 px-4">
+                <div className="md:hidden py-2 px-4 font-bold">
                     <a
                         href="#"
-                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-mono font-body"
+                        className="block text-pie hover:text-bean py-2 px-4 text-base font-mono font-body"
                     >
-                        Home
+                        New
                     </a>
                     <a
                         href="#"
-                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-mono font-body"
+                        className="block text-pie hover:text-bean py-2 px-4 text-base font-mono font-body"
                     >
-                        About
+                        Music
                     </a>
                     <a
                         href="#"
-                        className="block text-white hover:text-gray-300 py-2 px-4 text-base font-mono font-body"
+                        className="block text-pie hover:text-bean py-2 px-4 text-base font-mono font-body"
                     >
                         Contact
                     </a>
