@@ -5,7 +5,7 @@ export default function Nav() {
 
     return (
         // <nav className="bg-gradient-to-r from-amber-300 to-amber-900 p-4">
-        <nav className="bg-gradient-to-r bg-bam p-4 border-b-2 border-pie">
+        <nav className=" bg-bam p-3 border-b-2 border-pie">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-pie text-shadow font-bold text-2xl md:text-3xl font-heading font-mono">
                     BamPie
@@ -37,7 +37,7 @@ export default function Nav() {
                     <a
                         href="#new"
                         className={`text-pie ${
-                            open ? "hover:text-bean" : "hover:text-pie"
+                            open ? "hover:text-bean hover:line" : "hover:text-pie"
                         }`}
                     >
                         New
