@@ -35,7 +35,7 @@ export default function Nav() {
                 {/* Desktop menu */}
                 <div className="hidden md:flex space-x-4 text-base md:text-l font-bold font-body ">
                     <a
-                        href="#"
+                        href="#new"
                         className={`text-pie ${
                             open ? "hover:text-bean" : "hover:text-pie"
                         }`}
@@ -43,7 +43,7 @@ export default function Nav() {
                         New
                     </a>
                     <a
-                        href="#"
+                        href="#music"
                         className={`text-pie ${
                             open ? "hover:text-bean" : "hover:text-pie"
                         }`}
@@ -51,7 +51,7 @@ export default function Nav() {
                         Music
                     </a>
                     <a
-                        href="#"
+                        href="#contact"
                         className={`text-pie ${
                             open ? "hover:text-bean" : "hover:text-pie"
                         }`}
@@ -65,19 +65,19 @@ export default function Nav() {
             {open && (
                 <div className="md:hidden py-2 px-4 font-bold">
                     <a
-                        href="#"
+                        href="#new"
                         className="block text-pie hover:text-bean py-2 px-4 text-base font-mono font-body"
                     >
                         New
                     </a>
                     <a
-                        href="#"
+                        href="#music"
                         className="block text-pie hover:text-bean py-2 px-4 text-base font-mono font-body"
                     >
                         Music
                     </a>
                     <a
-                        href="#"
+                        href="#contact"
                         className="block text-pie hover:text-bean py-2 px-4 text-base font-mono font-body"
                     >
                         Contact

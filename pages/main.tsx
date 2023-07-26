@@ -28,7 +28,7 @@ export default function Main() {
                 </div>
                     <div
                         className=" -mt-40 flex items-center justify-center h-screen"
-                        key="new"
+                        id="new"
                     >
                         <Image
                             src="/bampie.png"
@@ -46,7 +46,8 @@ export default function Main() {
                     </div>
                     </div>
 
-                <div className="ml-4 mr-4 grid grid-cols-2 md:grid-cols-4 gap-8 font-mono">
+                <div className="ml-4 mr-4 grid grid-cols-2 md:grid-cols-4 gap-8 font-mono"
+                    id="music">
                     {/* Album Item 1 */}
                     <div
                         className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
@@ -95,8 +96,10 @@ export default function Main() {
                         />
                     </div>
                 </div>
+
+                <div className="flex flex-col mt-8 items-center justify-center"
+                id="contact">
                 {/* instagram */}
-                <div className="flex flex-col mt-8 items-center justify-center">
                     <div className="hover:cursor-pointer ">
                     <Link href="https://www.instagram.com/">
                         <svg xmlns="http://www.w3.org/2000/svg" 
@@ -138,13 +141,13 @@ export default function Main() {
                         {showBubble &&<div 
                         onClick={copyToClipboard}
                         className={`hover:cursor-pointer mt-1 text-pie font-bold ${isCopied ? 'text-pink-300' : ''}`}>
-        {email}
-        </div>}
-        {isCopied && (
-            <div className=" text-pink-100 text-xs">
-        copied ✔️
-        </div>
-        )}
+                        {email}
+                    </div>}
+                        {isCopied && (
+                    <div className=" text-pink-100 text-xs">
+                        copied ✔️
+                    </div>
+                        )}
                 </div>
             </div>
         </section>
