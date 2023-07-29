@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from "react";
 import Link from 'next/link';
 import { useState } from 'react';
+import Confetti from '../component/confetti';
 
 export default function Main() {
     const [showBubble, setShowBubble] = useState(false);
@@ -19,6 +20,8 @@ export default function Main() {
       }, 1000);
     };
 
+    const [isVisible, setIsVisible] = useState(false);
+    
     return (
         <section className="bg-bam py-8">
             <div className="container mx-auto font-notosanskr">
@@ -30,13 +33,16 @@ export default function Main() {
                         className=" -mt-40 flex items-center justify-center h-screen"
                         id="new"
                     >
+                        <button onClick={() => setIsVisible(true)}>
                         <Image
                             src="/bampie.png"
                             alt="New"
                             className="w-72 h-80 justify-items-center object-cover rounded-t-lg"
                             width="500"
                             height="500"
-                        />
+                            />
+                        </button>
+                            {isVisible && <Confetti />}
                         </div>
                         <div className="-mt-20 mb-10 justify-center text-center">
                             <div className="text-2xl text-white font-bold">파이</div>
@@ -53,10 +59,13 @@ export default function Main() {
                         className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
                         key="album1"
                     >
-                        <img
+                        <Image
                             src="/album1.jpg"
-                            alt="Album 1"
-                            className="w-64 h-64 object-cover rounded-t-lg"
+                            alt="Album1"
+                            className="w-64 h-64"
+                            // className="w-64 h-64 object-cover rounded-t-lg"
+                            width="500"
+                            height="500"
                         />
                     </div>
 
@@ -65,10 +74,12 @@ export default function Main() {
                         className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
                         key="album2"
                     >
-                        <img
+                        <Image
                             src="/album2.jpg"
-                            alt="Album 2"
-                            className="w-64 h-64 object-cover rounded-t-lg"
+                            alt="Album2"
+                            className="w-64 h-64"
+                            width="500"
+                            height="500"
                         />
                     </div>
 
@@ -77,10 +88,12 @@ export default function Main() {
                         className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
                         key="album3"
                     >
-                        <img
+                        <Image
                             src="/album3.jpg"
-                            alt="Album 3"
-                            className="w-64 h-64 object-cover rounded-t-lg"
+                            alt="Album3"
+                            className="w-64 h-64"
+                            width="500"
+                            height="500"
                         />
                     </div>
 
@@ -89,10 +102,12 @@ export default function Main() {
                         className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
                         key="album4"
                     >
-                        <img
+                        <Image
                             src="/album4.jpg"
-                            alt="Album 4"
-                            className="w-64 h-64 object-cover rounded-t-lg"
+                            alt="Album4"
+                            className="w-64 h-64"
+                            width="500"
+                            height="500"
                         />
                     </div>
                 </div>
