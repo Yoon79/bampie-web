@@ -1,15 +1,15 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useCallback, useEffect, useRef } from 'react';
-
 import ReactCanvasConfetti from 'react-canvas-confetti';
 
-export default function Confetti() {
+export default function Confetti(this: any) {
   const refAnimationInstance = useRef(null);
 
-  const getInstance = useCallback(instance => {
+  const getInstance = useCallback((instance: null)  => {
     refAnimationInstance.current = instance;
   }, []);
 
-  const makeShot = useCallback((particleRatio, opts) => {
+  const makeShot = useCallback((particleRatio: number, opts: any) => {
     refAnimationInstance.current &&
       refAnimationInstance.current({
         ...opts,
