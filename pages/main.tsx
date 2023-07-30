@@ -23,14 +23,14 @@ export default function Main() {
     const [isVisible, setIsVisible] = useState(false);
     
     return (
-        <section className="bg-bam py-8">
+        <section className="bg-bam py-8 ">
             <div className="container mx-auto font-notosanskr">
                 <div>
                 <div className="text-pink-300 text-4xl font-bold text-center font-mono mb-8">
                 NEW
                 </div>
                     <div
-                        className=" -mt-40 flex items-center justify-center h-screen"
+                        className="-mt-40 flex items-center justify-center h-screen"
                         id="new"
                     >
                         <button onClick={() => setIsVisible(true)}>
@@ -42,7 +42,7 @@ export default function Main() {
                             height="500"
                             />
                         </button>
-                            {isVisible && <Confetti />}
+                        {isVisible && <Confetti />}
                         </div>
                         <div className="-mt-20 mb-10 justify-center text-center">
                             <div className="text-2xl text-white font-bold">파이</div>
