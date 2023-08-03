@@ -33,27 +33,27 @@ export default function Nav() {
                 </button>
 
                 {/* Desktop menu */}
-                <div className="hidden md:flex space-x-4 text-base md:text-l font-bold font-body ">
+                <div className="hidden md:flex space-x-4 text-base md:text-l font-bold">
                     <a
                         href="#new"
-                        className={`text-pie ${
-                            open ? "hover:text-bean hover:line" : "hover:text-pie"
+                        className={`text-pie hover:ring-pie hover:ring-2 rounded-full ring-offset-2 ring-offset-bam ${
+                            open ? " hover:ring-pie" : " hover:ring-pie"
                         }`}
                     >
                         New
                     </a>
                     <a
                         href="#music"
-                        className={`text-pie ${
-                            open ? "hover:text-bean" : "hover:text-pie"
+                        className={`text-pie hover:ring-pie hover:ring-2 rounded-full ring-offset-2 ring-offset-bam ${
+                            open ? "hover:ring-pie" : "hover:text-pie"
                         }`}
                     >
                         Music
                     </a>
                     <a
                         href="#contact"
-                        className={`text-pie ${
-                            open ? "hover:text-bean" : "hover:text-pie"
+                        className={`text-pie hover:ring-pie hover:ring-2 rounded-full ring-offset-2 ring-offset-bam ${
+                            open ? "hover:ring-pie" : "hover:text-pie"
                         }`}
                     >
                         Contact
