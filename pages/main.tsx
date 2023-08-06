@@ -45,10 +45,10 @@ export default function Main() {
                         {isVisible && <Confetti />}
                         </div>
                         <div className="-mt-20 mb-10 justify-center text-center">
-                            <div className="text-2xl text-white font-bold">파이</div>
-                            <div className="text-xl text-white">
-                                밤파이밤파이밤파이 밤파이밤파이밤파이밤파이밤파이밤파이 
-                            </div>
+                            <div className="text-2xl text-white font-bold">밤파이 클릭 🎉</div>
+                            <div className="text-xl text-white"> ✔️ 8 / 19 브런치 </div>
+                            <div className="text-xl text-white"> ✔️ 8 / 19 브런치 </div>
+                            <div className="text-xl text-white"> ✔️ 8 / 19 브런치 </div>
                     </div>
                     </div>
 
