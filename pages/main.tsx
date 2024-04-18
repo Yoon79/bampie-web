@@ -23,10 +23,10 @@ export default function Main() {
     const [isVisible, setIsVisible] = useState(false);
     
     return (
-        <section className="bg-bam py-8 ">
+        <section className="bg-bam py-10">
             <div className="container mx-auto font-notosanskr">
                 <div>
-                <div className="text-pink-300 text-4xl font-bold text-center font-mono mb-8">
+                <div className="text-violet-400 text-4xl font-bold text-center font-mono mb-5">
                 NEW
                 </div>
                     <div
@@ -35,20 +35,18 @@ export default function Main() {
                     >
                         <button onClick={() => setIsVisible(true)}>
                         <Image
-                            src="/bampie.png"
+                            src="/catpie.png"
                             alt="New"
-                            className="w-72 h-80 justify-items-center object-cover rounded-t-lg"
+                            className="w-60 h-60 justify-items-center"
                             width="500"
                             height="500"
                             />
                         </button>
                         {isVisible && <Confetti />}
                         </div>
-                        <div className="-mt-20 mb-10 justify-center text-center">
+                        <div className="-mt-28 mb-10 justify-center text-center">
                             <div className="text-2xl text-white font-bold">밤파이 클릭 🎉</div>
-                            <div className="text-xl text-white"> ✔️ 8 / 19 브런치 </div>
-                            <div className="text-xl text-white"> ✔️ 8 / 19 브런치 </div>
-                            <div className="text-xl text-white"> ✔️ 8 / 19 브런치 </div>
+                            <div className="text-xl text-white"> ✔️ 4 / 26 녹음 </div>
                     </div>
                     </div>
 
@@ -56,7 +54,7 @@ export default function Main() {
                     id="music">
                     {/* Album Item 1 */}
                     <div
-                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
+                        className="bg-bam border-2 border-pie hover:scale-105 cursor-pointer"
                         key="album1"
                     >
                         <Image
@@ -116,7 +114,7 @@ export default function Main() {
                 id="contact">
                 {/* instagram */}
                     <div className="hover:cursor-pointer ">
-                    <Link href="https://www.instagram.com/">
+                    <Link href="https://www.instagram.com/bampie.4piece">
                         <svg xmlns="http://www.w3.org/2000/svg" 
                         width="24" 
                         height="24" 
