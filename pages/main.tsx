@@ -23,10 +23,10 @@ export default function Main() {
     const [isVisible, setIsVisible] = useState(false);
     
     return (
-        <section className="bg-bam py-10">
+        <section className="bg-bam py-10 font-mono ">
             <div className="container mx-auto font-notosanskr">
                 <div>
-                <div className="text-violet-400 text-4xl font-bold text-center font-mono mb-5">
+                <div className="text-violet-400 text-4xl font-bold text-center mb-5">
                 NEW
                 </div>
                     <div
@@ -45,8 +45,9 @@ export default function Main() {
                         {isVisible && <Confetti />}
                         </div>
                         <div className="-mt-28 mb-10 justify-center text-center">
-                            <div className="text-2xl text-white font-bold">밤파이 클릭 🎉</div>
-                            <div className="text-xl text-white"> ✔️ 4 / 26 녹음 </div>
+                            <div className="text-2xl text-white font-bold pb-4">plans</div>
+                            <div className="text-xl text-white"> ✔️ 3 piece rec. 🌰 4 / 25 </div>
+                            <div className="text-xl text-white"> ✔️ 4 piece rec. 🌰 4 / 26 </div>
                     </div>
                     </div>
 
