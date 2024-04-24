@@ -1,11 +1,13 @@
-import Image from 'next/image';
 import React from "react";
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Confetti from '../component/confetti';
 
 export default function Main() {
+
     const [showBubble, setShowBubble] = useState(false);
+
     const toggleBubble = () => {
       setShowBubble(!showBubble);
     };
@@ -21,9 +23,9 @@ export default function Main() {
     };
 
     const [isVisible, setIsVisible] = useState(false);
-    
+
     return (
-        <section className="bg-bam py-10 font-mono ">
+        <section className="bg-bam py-10 font-mono">
             <div className="container mx-auto font-notosanskr">
                 <div>
                 <div className="text-violet-400 text-4xl font-bold text-center mb-5">
