@@ -47,17 +47,17 @@ export default function Main() {
                         {isVisible && <Confetti />}
                         </div>
                         <div className="-mt-28 mb-10 justify-center text-center">
-                            <div className="text-2xl text-white font-bold pb-4">plans</div>
-                            <div className="text-xl text-white"> ✔️ 3 piece rec. 🌰 4 / 25 </div>
-                            <div className="text-xl text-white"> ✔️ 4 piece rec. 🌰 4 / 26 </div>
+                            <div className="text-2xl text-white font-bold pb-4">album release plans</div>
+                            <div className="text-xl text-white"> 🌴 2024/07/04 - 긴 긴 하루  </div>
+                            <div className="text-xl text-white"> 🌴 2024/07 - Do my best </div>
                     </div>
                     </div>
 
-                <div className="ml-4 mr-4 grid grid-cols-2 md:grid-cols-4 gap-8 font-mono"
+                <div className="ml-1 mr-1 grid grid-cols-2 md:grid-cols-4 gap-1 font-mono"
                     id="music">
                     {/* Album Item 1 */}
                     <div
-                        className="bg-bam border-2 border-pie hover:scale-105 cursor-pointer"
+                        className="bg-bam border-pie md:hover:scale-105 cursor-pointer"
                         key="album1"
                     >
                         <Image
@@ -84,33 +84,33 @@ export default function Main() {
                         />
                     </div>
 
-                    {/* Album Item 3 */}
-                    <div
-                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
-                        key="album3"
-                    >
-                        <Image
-                            src="/album3.jpg"
-                            alt="Album3"
-                            className="w-64 h-64"
-                            width="500"
-                            height="500"
-                        />
-                    </div>
+                {/*    /!* Album Item 3 *!/*/}
+                {/*    <div*/}
+                {/*        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"*/}
+                {/*        key="album3"*/}
+                {/*    >*/}
+                {/*        <Image*/}
+                {/*            src="/album3.jpg"*/}
+                {/*            alt="Album3"*/}
+                {/*            className="w-64 h-64"*/}
+                {/*            width="500"*/}
+                {/*            height="500"*/}
+                {/*        />*/}
+                {/*    </div>*/}
 
-                    {/* Album Item 4 */}
-                    <div
-                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
-                        key="album4"
-                    >
-                        <Image
-                            src="/album4.jpg"
-                            alt="Album4"
-                            className="w-64 h-64"
-                            width="500"
-                            height="500"
-                        />
-                    </div>
+                {/*    /!* Album Item 4 *!/*/}
+                {/*    <div*/}
+                {/*        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"*/}
+                {/*        key="album4"*/}
+                {/*    >*/}
+                {/*        <Image*/}
+                {/*            src="/album4.jpg"*/}
+                {/*            alt="Album4"*/}
+                {/*            className="w-64 h-64"*/}
+                {/*            width="500"*/}
+                {/*            height="500"*/}
+                {/*        />*/}
+                {/*    </div>*/}
                 </div>
 
                 <div className="flex flex-col mt-8 items-center justify-center"
