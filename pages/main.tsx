@@ -47,9 +47,9 @@ export default function Main() {
                         {isVisible && <Confetti />}
                         </div>
                         <div className="-mt-28 mb-10 justify-center text-center">
-                            <div className="text-2xl text-white font-bold pb-4">album release plans</div>
-                            <div className="text-xl text-white"> 🌴 2024/07/04 - 긴 긴 하루  </div>
-                            <div className="text-xl text-white"> 🌴 2024/07 - Do my best </div>
+                            <div className="text-2xl text-white font-bold pb-4">MUSIC</div>
+                            {/*<div className="text-xl text-white"> 🌴 2024/07/04 - 긴 긴 하루  </div>*/}
+                            {/*<div className="text-xl text-white"> 🌴 2024/07 - Do my best </div>*/}
                     </div>
                     </div>
 
@@ -63,7 +63,7 @@ export default function Main() {
                         <Image
                             src="/album1.jpg"
                             alt="Album1"
-                            className="w-64 h-64"
+                            className="w-60 h-60"
                             // className="w-64 h-64 object-cover rounded-t-lg"
                             width="500"
                             height="500"
@@ -78,39 +78,39 @@ export default function Main() {
                         <Image
                             src="/album2.jpg"
                             alt="Album2"
-                            className="w-64 h-64"
+                            className="w-60 h-60"
                             width="500"
                             height="500"
                         />
                     </div>
 
-                {/*    /!* Album Item 3 *!/*/}
-                {/*    <div*/}
-                {/*        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"*/}
-                {/*        key="album3"*/}
-                {/*    >*/}
-                {/*        <Image*/}
-                {/*            src="/album3.jpg"*/}
-                {/*            alt="Album3"*/}
-                {/*            className="w-64 h-64"*/}
-                {/*            width="500"*/}
-                {/*            height="500"*/}
-                {/*        />*/}
-                {/*    </div>*/}
+                    {/* Album Item 3 */}
+                    <div
+                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
+                        key="album3"
+                    >
+                        <Image
+                            src="/album3.jpg"
+                            alt="Album3"
+                            className="w-60 h-60"
+                            width="500"
+                            height="500"
+                        />
+                    </div>
 
-                {/*    /!* Album Item 4 *!/*/}
-                {/*    <div*/}
-                {/*        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"*/}
-                {/*        key="album4"*/}
-                {/*    >*/}
-                {/*        <Image*/}
-                {/*            src="/album4.jpg"*/}
-                {/*            alt="Album4"*/}
-                {/*            className="w-64 h-64"*/}
-                {/*            width="500"*/}
-                {/*            height="500"*/}
-                {/*        />*/}
-                {/*    </div>*/}
+                    {/* Album Item 4 */}
+                    <div
+                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
+                        key="album4"
+                    >
+                        <Image
+                            src="/album4.jpg"
+                            alt="Album4"
+                            className="w-60 h-60"
+                            width="500"
+                            height="500"
+                        />
+                    </div>
                 </div>
 
                 <div className="flex flex-col mt-8 items-center justify-center"
