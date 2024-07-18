@@ -28,11 +28,11 @@ export default function Main() {
         <section className="bg-bam py-10 font-mono">
             <div className="container mx-auto font-notosanskr">
                 <div>
-                <div className="text-violet-400 text-4xl font-bold text-center mb-5">
-                NEW
-                </div>
+                {/*<div className="text-violet-400 text-4xl font-bold text-center mb-5">*/}
+                {/*NEW*/}
+                {/*</div>*/}
                     <div
-                        className="-mt-40 flex items-center justify-center h-screen"
+                        className="-mt-20 flex items-center justify-center h-screen"
                         id="new"
                     >
                         <button onClick={() => setIsVisible(true)}>
@@ -47,71 +47,58 @@ export default function Main() {
                         {isVisible && <Confetti />}
                         </div>
                         <div className="-mt-28 mb-10 justify-center text-center">
-                            <div className="text-2xl text-white font-bold pb-4">MUSIC</div>
+                            <div className="text-3xl text-white font-bold pb-4">MUSIC</div>
                             {/*<div className="text-xl text-white"> 🌴 2024/07/04 - 긴 긴 하루  </div>*/}
                             {/*<div className="text-xl text-white"> 🌴 2024/07 - Do my best </div>*/}
                     </div>
                     </div>
 
-                <div className="ml-1 mr-1 grid grid-cols-2 md:grid-cols-4 gap-1 font-mono"
-                    id="music">
+                <div className="ml-1 mr-1 grid grid-cols-2 md:grid-cols-4 gap-1 font-mono" id="music">
                     {/* Album Item 1 */}
-                    <div
-                        className="bg-bam border-pie md:hover:scale-105 cursor-pointer"
-                        key="album1"
-                    >
+                    <div className="bg-bam border-pie border-[1px] md:hover:scale-105 cursor-pointer" key="album1">
                         <Image
                             src="/album1.jpg"
                             alt="Album1"
-                            className="w-60 h-60"
-                            // className="w-64 h-64 object-cover rounded-t-lg"
-                            width="500"
-                            height="500"
+                            className="object-cover"
+                            width="240" // Fixed width
+                            height="240" // Fixed height
                         />
                     </div>
 
                     {/* Album Item 2 */}
-                    <div
-                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
-                        key="album2"
-                    >
+                    <div className="bg-bam border-2 border-pie border-[1px] transform transition-transform hover:scale-105 cursor-pointer" key="album2">
                         <Image
                             src="/album2.jpg"
                             alt="Album2"
-                            className="w-60 h-60"
-                            width="500"
-                            height="500"
+                            className="object-cover"
+                            width="240" // Fixed width
+                            height="240" // Fixed height
                         />
                     </div>
 
                     {/* Album Item 3 */}
-                    <div
-                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
-                        key="album3"
-                    >
+                    <div className="bg-bam border-2 border-pie border-[1px] transform transition-transform hover:scale-105 cursor-pointer" key="album3">
                         <Image
                             src="/album3.jpg"
                             alt="Album3"
-                            className="w-60 h-60"
-                            width="500"
-                            height="500"
+                            className="object-cover"
+                            width="240" // Fixed width
+                            height="240" // Fixed height
                         />
                     </div>
 
                     {/* Album Item 4 */}
-                    <div
-                        className="bg-bam border-2 border-pie transform transition-transform hover:scale-105 cursor-pointer"
-                        key="album4"
-                    >
+                    <div className="bg-bam border-2 border-pie border-[1px] transform transition-transform hover:scale-105 cursor-pointer" key="album4">
                         <Image
                             src="/album4.jpg"
                             alt="Album4"
-                            className="w-60 h-60"
-                            width="500"
-                            height="500"
+                            className="object-cover"
+                            width="240" // Fixed width
+                            height="240" // Fixed height
                         />
                     </div>
                 </div>
+
 
                 <div className="flex flex-col mt-8 items-center justify-center"
                 id="contact">
